@@ -21,7 +21,7 @@ h2 {
     color: white;
     display: inline-block;
     position: relative;
-    left:5.5%;
+    left:12.5%;
     top:3px;
     font-family: Helvetica, Arial, "sans-serif";
     font-size:1.6rem;
@@ -102,7 +102,7 @@ h3 {
     display: inline-block;
     position: relative;
     top:15px;
-    left: 5.5%;
+    left: 12.5%;
     /* width:40px;
     height:40px; */
 }
@@ -116,7 +116,7 @@ h3 {
     display: inline-block;
     position: relative;
     top:70px;
-    left: 5.5%;
+    left: 12.5%;
     width:40px;
     height:40px;
 }
@@ -124,48 +124,48 @@ h3 {
     display: inline-block;
     position: relative;
     top: 60px;
-    left:5.5%;
+    left:12.5%;
 }
 .header-link {
     color: white;
     position: absolute;
-    right: 37.5%;
-    top: 5.5%;
+    right: 650px;
+    top:30px;
     text-decoration: none;
 }
 .header-link2 {
     color: white;
     position: absolute;
-    right: 30%;
-    top: 5.5%;
+    right: 560px;
+    top:30px;
     text-decoration: none;
 }
 .header-link3 {
     color: white;
     position: absolute;
-    right: 21.5%;
-    top: 5.5%;
+    right: 450px;
+    top:30px;
     text-decoration: none;
 }
 .vl {
     color:white;
     position:absolute;
-    right:18.7%;
-    top:5.5%;
-    border-left: 1px solid;
-    height: 17px;
+    right:400px;
+    top:25px;
+    border-left: 3px solid;
+    height: 30px;
 }
 .header-link4 {
     color: white;
     position: absolute;
-    right: 12%;
+    right: 300px;
     top:30px;
     text-decoration:none;
 }
 .header-link5 {
     color: white;
     position: absolute;
-    right: 5.5%;
+    right: 220px;
     top:30px;
     text-decoration: none;
 }
