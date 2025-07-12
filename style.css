@@ -1,0 +1,356 @@
+:root {
+    --primary-green: #1ed760;
+    --dark-blue: #2a42ae;
+    --black: #000;
+    --white: #fff;
+    --light-grey: #77868f;
+    --max-width: 1200px; /* Define a maximum width for content */
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: var(--white);
+    background: var(--dark-blue);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Base Styles (Header, Middle, Footer) */
+.top-container,
+.middle-container,
+.bottom-container {
+    box-sizing: border-box;
+}
+
+/* Header */
+.top-container {
+    background-color: var(--black);
+    padding: 1rem 0; /* Adjust padding to 0 on sides, as wrapper handles it */
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding inside the wrapper for smaller screens */
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.spotify-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+h2 {
+    color: var(--white);
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.spotify-registered {
+    font-size: 0.8rem;
+    vertical-align: super;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.header-links a:hover {
+    color: var(--primary-green);
+}
+
+.divider {
+    height: 30px;
+    width: 2px;
+    background-color: var(--white);
+    margin: 0 10px;
+}
+
+.btn-signup {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-signup:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-login {
+    padding: 10px 20px;
+    background-color: var(--primary-green);
+    border-radius: 50px;
+    color: var(--dark-blue);
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #13f261;
+}
+
+/* Middle Section */
+.middle-container {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 2rem 0;
+    background-color: var(--dark-blue);
+}
+
+.middle-container::before {
+    content: '';
+    background: url('media/half Gcircle.png') no-repeat right top;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    z-index: 0;
+}
+
+.middle-container::after {
+    content: '';
+    background: url('media/design-GBcircle.png') no-repeat left bottom;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    z-index: 0;
+}
+
+.main-wrapper {
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--primary-green);
+    line-height: 1;
+}
+
+.listen-everything {
+    color: var(--white);
+}
+
+.listen-prgh {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white);
+    margin: 20px 0 40px;
+    max-width: 500px;
+}
+
+.btn {
+    font-weight: 700;
+    padding: 16px 40px;
+    background: var(--primary-green);
+    border-radius: 50px;
+    color: var(--dark-blue);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #13f261;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.bottom-container {
+    background-color: var(--black);
+    padding: 3rem 0;
+    color: var(--white);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    border-bottom: 1px solid var(--light-grey);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.spotify-img2 {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    color: var(--light-grey);
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.link-column a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.link-column a:hover {
+    color: var(--primary-green);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.bottom2-links a {
+    color: var(--light-grey);
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.bottom2-links a:hover {
+    color: var(--primary-green);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-container {
+        padding: 1rem 0;
+    }
+
+    .header-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .header-links {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .middle-container {
+        min-height: 60vh;
+        padding: 4rem 0;
+    }
+
+    .main-wrapper {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .listen-prgh {
+        font-size: 1rem;
+    }
+
+    .middle-container::before, .middle-container::after {
+        display: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .link-column {
+        align-items: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 0 10px;
+    }
+
+    .bottom2-links a {
+        display: block;
+        margin: 5px 0;
+    }
+}
